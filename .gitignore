@@ -1,0 +1,26 @@
+# Vendored third-party source trees (not part of this project; kept locally
+# for reference but not published — the working tools use libhackrf directly
+# and don't need these)
+/SoapySDR/
+/SoapyHackRF/
+
+# Compiled binaries (build from the matching .cpp with the command in
+# README.md)
+/ook_tx
+/replay_hackrf
+/hotas_drive
+*.o
+
+# Local cleanup holding area (see README "Repo history" note)
+/.cleanup_trash/
+
+# Captures / generated artifacts from ad-hoc testing (regenerate as needed;
+# BBD_0000/BBD_0001 captures + .TXT metadata are the reference data and are
+# intentionally tracked, not ignored)
+*.cu8
+*.raw
+
+# Python / editor cruft
+__pycache__/
+*.pyc
+.venv*/

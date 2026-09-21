@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "atomic": "cpp",
+        "vector": "cpp",
+        "iostream": "cpp",
+        "cstdio": "cpp",
+        "cstdint": "cpp",
+        "csignal": "cpp",
+        "cmath": "cpp",
+        "thread": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp"
+    }
+}
