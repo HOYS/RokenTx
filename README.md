@@ -10,6 +10,7 @@ Reverse-engineered the RF protocol of the 27MHz remote-control of Rokenbok toys,
 - [Repo layout](#repo-layout)
 - [Building](#building)
 - [Usage](#usage)
+- [License](#license)
 
 ## Status
 
@@ -17,8 +18,8 @@ Reverse-engineered the RF protocol of the 27MHz remote-control of Rokenbok toys,
 |---|---|---|
 | Frequency + protocol decode | — | ✅ cross-checked via RTL-SDR, HackRF RX, logic analyzer |
 | Raw-capture replay | `replay_hackrf` | ✅ |
-| From-scratch signal synthesis | `ook_tx` | ✅ (after fixing a framing bug — see below) |
-| Live real-time joystick control | `hotas_drive` | ✅ (after fixing a second framing bug — see below) |
+| From-scratch signal synthesis | `ook_tx` | ✅ (after fixing a framing bug) |
+| Live real-time joystick control | `hotas_drive` | ✅ (after fixing a second framing bug) |
 | Same tools, via a Raspberry Pi + rpitx-ui instead of a HackRF | [`rpitx/`](rpitx/) | ⏳ builds and logic tested on the dev PC; the actual RF hop through `sendiq` needs real Pi hardware to verify |
 
 ## Hardware
@@ -127,3 +128,7 @@ valid names.
 Axis 0 (roll) → E/W, axis 1 (pitch) → N/S, buttons 0–3 → A/B/X/Y. Add
 `--invert-y` if forward/back feels backwards, `--addr N` for a different
 paired address.
+
+## License
+
+[MIT](LICENSE)
