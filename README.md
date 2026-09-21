@@ -52,8 +52,7 @@ True OOK (on/off keying), 16-bit word, MSB-first:
 - Then 16 bit-pulses: HIGH width encodes the bit (**311 µs = 0**,
   **809 µs = 1**), each followed by the same 193 µs LOW gap.
 - While a button is held, the *next* frame's pause begins immediately after
-  the last bit's LOW gap — no extra silence. This detail turned out to
-  matter a lot (see [Bugs found & fixed](#bugs-found--fixed)).
+  the last bit's LOW gap — no extra silence.
 
 Word layout (MSB-first) — see `assets/key_order.jpg` for the original
 derivation:
